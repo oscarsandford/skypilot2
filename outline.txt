@@ -1,0 +1,15 @@
+home
+- pictures of products instead of mountains
+- what is NEW for products? (MUST BE carousel)
+- lots of brand repr (think metoliusclimbing.com front page)
+- lower down, the people (us three) and mission statement
+
+- integrate social media at the bottom of the home page (think coros.com)
+
+brands
+- 
+
+store locator
+- similar to original skypilot
+
+>>> focus on frontend design before backend integrations
