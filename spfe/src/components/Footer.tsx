@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Footer() {
+function Footer(): JSX.Element {
   return (
     <footer>
       <div id='footer-aside'>

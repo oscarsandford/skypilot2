@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-function Nav() {
+function Nav(): JSX.Element {
   // Fix this.
   const borger = document.querySelector('borger');
   const borgerToggle = async () => {

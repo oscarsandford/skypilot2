@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './styles/bounds.css';
+import './styles/components.css';
 
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -10,7 +11,7 @@ import Home from './pages/Home';
 import Brands from './pages/Brands';
 
 
-function App() {
+function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Nav/>
