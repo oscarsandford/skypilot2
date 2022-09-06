@@ -24,6 +24,7 @@ other style sheets, but it works for prototyping.
 }
 
 .arrow-btn {
+  cursor: pointer;
   position:absolute;
   top: 45%;
   transform: translateY(-50%);
@@ -31,15 +32,15 @@ other style sheets, but it works for prototyping.
   width: 40px;
   height: 40px;
   background-color: rgba(0, 0, 0, 0);
-  /* border-color: var(--light); */
+  border-color: var(--light);
   border-width: 0 3px 3px 0;
 
-  opacity: 50%;
+  opacity: 70%;
   transition: .3s;
 }
 
 .left-arrow:hover, .right-arrow:hover {
-  opacity: 90%;
+  opacity: 100%;
 } 
 
 .left-arrow {
@@ -57,5 +58,54 @@ other style sheets, but it works for prototyping.
 @media (hover: none) and (pointer: coarse) {
   .left-arrow, .right-arrow {
     display: none;
+  }
+}
+
+.block-grid {
+  line-height: 0;
+  margin: 50px 50px;
+}
+
+.block-grid .block {
+  width: 50%;
+  min-height: 20em;
+  line-height: 1.2;
+  display: inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+
+  color: var(--light);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.block-grid .block .text-wrapper {
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.block-grid .block .text-wrapper .text {
+  margin-top: 1em;
+}
+
+@media (max-width: 700px) {
+  .block-grid .block {
+    width: 50%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .block-grid .block {
+    width: 100%;
   }
 }

@@ -10,14 +10,13 @@ function Carousel(): JSX.Element {
     img1, img2, img3
   ];
   const imgCount: number = imgSrcs.length;
-  const wrapping: boolean = true;
   const [currImgIdx, setCurrImgIdx] = useState(0);
 
   const goLeft = () => {
     if (currImgIdx > 0) {
       setCurrImgIdx(currImgIdx - 1)
     }
-    else if (currImgIdx <= 0 && wrapping) {
+    else if (currImgIdx <= 0) {
       setCurrImgIdx(imgCount - 1);
     }
   };
@@ -26,7 +25,7 @@ function Carousel(): JSX.Element {
     if (currImgIdx < imgCount-1) {
       setCurrImgIdx(currImgIdx + 1)
     }
-    else if (currImgIdx >= imgCount-1 && wrapping) {
+    else if (currImgIdx >= imgCount-1) {
       setCurrImgIdx(0);
     }
   };
@@ -45,4 +44,3 @@ function Carousel(): JSX.Element {
 }
 
 export default Carousel;
-

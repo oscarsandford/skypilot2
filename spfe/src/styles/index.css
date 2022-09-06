@@ -17,7 +17,6 @@ means it is present in all its children.
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--dark);
   box-sizing: border-box; 
 }
 
@@ -27,11 +26,13 @@ allows us to overwrite it on other style sheets.
 */
 body {
   color: var(--light);
+  background-color: var(--dark);
 }
 
 .container {
   height: 100vh;
   width: 100%;
+  padding: 1% 1%;
 }
 
 #home {
