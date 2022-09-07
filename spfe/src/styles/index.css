@@ -7,6 +7,7 @@ means it is present in all its children.
   --primary: #4e8cff;
   --light: white;
   --dark: #282c34;
+  --chalk: #f0f0f0;
 }
 
 * {
@@ -30,9 +31,15 @@ body {
 }
 
 .container {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   padding: 1% 1%;
+}
+
+.blank {
+  color: var(--dark);
+  background: var(--chalk);
+  background: linear-gradient(0deg, rgba(226,226,226,1) 0%, rgba(240,240,240,1) 100%);
 }
 
 #home {

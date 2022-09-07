@@ -29,6 +29,11 @@ function Home(): JSX.Element {
           />
         </div>
       </div>
+      <div className='container blank'>
+        <p>
+          hidsfs
+        </p>
+      </div>
     </div>
   );
 }
