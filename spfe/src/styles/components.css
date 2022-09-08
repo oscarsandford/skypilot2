@@ -89,6 +89,14 @@ other style sheets, but it works for prototyping.
   cursor: pointer;
 }
 
+.block-grid .block:hover {
+  transform: scale(1.007);
+    -webkit-transform: scale(1.007);
+    -moz-transform: scale(1.007);
+    -o-transform: scale(1.007);
+    -ms-transform: scale(1.007);
+}
+
 .block-grid .block .text-wrapper {
   text-align: center;
   vertical-align: middle;
@@ -115,4 +123,53 @@ other style sheets, but it works for prototyping.
   .block-grid .block {
     width: 100%;
   }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  /* overflow: hidden;  */
+  overflow: auto; 
+  cursor: grab;
+
+  user-select: none;
+    -webkit-user-select: none;       
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.flex-row .profile {
+  padding: 20px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-row .profile h3 {
+  padding-top: 10px;
+}
+
+.flex-row .profile h4 {
+  font-style: italic;
+  opacity: 60%;
+}
+
+.flex-row .profile p {
+  padding-top: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.flex-row .profile .portrait {
+  border-radius: 50%;
+  align-self: center;
+  width: 20rem;
+  height: 20rem;
+  -webkit-user-drag: none;
+}
+
+.container .blank h2 {
+  text-align: center;
 }

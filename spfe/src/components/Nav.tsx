@@ -6,7 +6,6 @@ function Nav(): JSX.Element {
   // Fix this.
   const borger = document.querySelector('borger');
   const borgerToggle = async () => {
-    console.log("hi");
     if (borger) {
       borger.classList.toggle('is-active');
     }

@@ -93,6 +93,7 @@ are added, or maybe find a way to make it adaptive*/
 footer {
   display: flex;
   justify-content: center;
+  /* margin: 2rem 1rem; */
   margin: 2rem 10%;
 }
 
