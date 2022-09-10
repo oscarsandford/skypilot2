@@ -3,22 +3,23 @@ import { Link } from 'react-router-dom';
 
 
 function Nav(): JSX.Element {
-  // Fix this.
-  const borger = document.querySelector('borger');
+  const borger = document.getElementById('borger');
+  const menu = document.getElementById('menu');
   const borgerToggle = async () => {
-    if (borger) {
-      borger.classList.toggle('is-active');
+    if (borger && menu) {
+      borger.classList.toggle('active');
+      menu.classList.toggle('dropdown');
     }
   };
 
   return (
     <nav>
       <h2 className='title'>Sky Pilot Enterprises</h2>
-      <div className='menu'>
+      <div id='menu' className='menu'>
         <Link to='/'>Home</Link>
         <Link to='/brands'>Brands</Link>
       </div>
-      <button className='borger' onClick={borgerToggle}>
+      <button id='borger' className='borger' onClick={borgerToggle}>
         <span/>
         <span/>
         <span/>

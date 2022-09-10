@@ -5,6 +5,7 @@ import ScrollRow from '../components/ScrollRow';
 import Profile from '../components/Profile';
 
 import dummy_img from '../assets/new/sb.jpg';
+import panorama_1 from '../assets/panorama/panorama_1.jpg';
 
 import pfp_jgs from '../assets/pfp/pfp_jgs.jpg';
 import pfp_jsw from '../assets/pfp/pfp_jsw.jpg';
@@ -57,6 +58,13 @@ function Home(): JSX.Element {
           />
         </ScrollRow>
       </div>
+      <div className='container blank' style={{backgroundImage: `url(${panorama_1})`, textDecoration: 'none'}}>
+        {/* Retailers here. (Logos in a grid view that link to their websites (maybe to a product page with brands filtered).*/}
+        <div className='block-grid'>
+          
+        </div>
+      </div>
+      {/* Social media embeds here. */}
     </div>
   );
 }

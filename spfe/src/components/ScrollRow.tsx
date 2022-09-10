@@ -5,6 +5,11 @@ type ScrollRowProps = {
 };
 
 function ScrollRow(props: ScrollRowProps) {
+  /**
+   * A scrollable row intended to be placed in a standard container.
+   * The row can be moved horizontally via a horizontal scroll or 
+   * by dragging with the left mouse button.
+   */
 
   const row = document.getElementById('portraits');
   let pos = { left:0, x:0 };

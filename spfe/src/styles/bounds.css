@@ -14,7 +14,7 @@ nav {
 }
 
 .menu {
-  display: none;
+  display: flex;
   /* flex: 1 1 0%; */
   justify-content: flex-end;
   margin: 0 -2em;
@@ -36,7 +36,7 @@ nav {
 
 /* The borger is the little icon that replaces the nav menu links on smaller screens. */
 .borger {
-  display: block;
+  display: none;
   position: relative;
   z-index: 1;
   user-select: none;
@@ -64,29 +64,31 @@ nav {
   transition: .4s;
 }
 
-.borger:hover {
-  transform: rotate(-90deg);
-}
-
-.borger:hover span:nth-child(1) {
-  transform: translate(8px, 1px);
-  background-color: var(--primary);
-}
-
-.borger:hover span:nth-child(3) {
-  transform: translate(-8px, -1px);
-  background-color: var(--primary);
-}
-
-
-/* base: 768px. Adjust this higher as more menu items 
-are added, or maybe find a way to make it adaptive*/
-@media (min-width: 1000px) {
-  .borger {
+/* Adjust this max-width threshold as we add more menu items. */
+@media (max-width: 1000px) {
+  .menu {
     display: none;
   }
-  .menu {
-    display: flex;
+  .borger {
+    display: block;
+  }
+  .borger.active {
+    transform: rotate(-90deg);
+  }
+  
+  .borger.active span:nth-child(1) {
+    transform: translate(8px, 1px);
+    background-color: var(--primary);
+  }
+  
+  .borger.active span:nth-child(3) {
+    transform: translate(-8px, -1px);
+    background-color: var(--primary);
+  }
+
+  .menu.dropdown {
+    display:flex;
+    flex-direction: column;
   }
 }
 
