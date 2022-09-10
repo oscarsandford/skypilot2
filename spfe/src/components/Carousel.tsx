@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import img1 from '../assets/new/cb.jpg';
 import img2 from '../assets/new/uwu.jpg';
@@ -12,6 +11,9 @@ interface carouselItem {
 
 function Carousel(): JSX.Element {
 
+  // TODO: we're not using carousel item links 
+  // anymore, but we'll leave these attributes 
+  // here for now, until we know for sure.
   const carouContent: Array<carouselItem> = [
     {img: img1, link: "/hi1"},
     {img: img2, link: "/hi2"},
@@ -41,8 +43,7 @@ function Carousel(): JSX.Element {
     <div className='carousel'>
       <button className='arrow-btn left-arrow' onClick={goLeft}/>
       <div className='carousel-content'>
-        <Link 
-          to={`${carouContent[carouIdx].link}`} 
+        <div 
           style={{backgroundImage: `url(${carouContent[carouIdx].img})`, textDecoration: 'none'}} 
           className='carousel-item'/>
       </div>

@@ -3,7 +3,7 @@ import React from 'react';
 function Brands(): JSX.Element {
   return (
     <div className='container' id='brands'>
-        this is the brands page
+      this is the brands page
     </div>
   );
 }

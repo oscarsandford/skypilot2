@@ -169,7 +169,3 @@ other style sheets, but it works for prototyping.
   height: 20rem;
   -webkit-user-drag: none;
 }
-
-.container .blank h2 {
-  text-align: center;
-}

@@ -59,10 +59,7 @@ function Home(): JSX.Element {
         </ScrollRow>
       </div>
       <div className='container blank' style={{backgroundImage: `url(${panorama_1})`, textDecoration: 'none'}}>
-        {/* Retailers here. (Logos in a grid view that link to their websites (maybe to a product page with brands filtered).*/}
-        <div className='block-grid'>
-          
-        </div>
+        
       </div>
       {/* Social media embeds here. */}
     </div>

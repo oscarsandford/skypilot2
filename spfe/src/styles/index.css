@@ -44,8 +44,14 @@ body {
 
 #home {
   /* See https://cssgradient.io/ */
-  background: rgb(8,1,117);
-  background: linear-gradient(0deg, rgba(8,1,117,1) 0%, rgba(130,130,212,1) 100%, rgba(0,212,255,1) 100%);
+  background: var(--primary);
+  /* background: rgb(8,1,117);
+  background: linear-gradient(0deg, rgba(8,1,117,1) 0%, rgba(130,130,212,1) 100%, rgba(0,212,255,1) 100%); */
+}
+
+#about {
+  background: rgb(255,200,57);
+  background: linear-gradient(0deg, rgba(255,200,57,1) 0%, rgba(255,228,152,1) 100%);
 }
 
 #brands {

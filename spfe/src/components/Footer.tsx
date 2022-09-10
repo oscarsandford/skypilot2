@@ -1,22 +1,34 @@
 import React from 'react';
 
+import spe_mtns_dark from '../assets/logo/spe_mtns_dark.jpg';
+
 function Footer(): JSX.Element {
   return (
     <footer>
       <div id='footer-aside'>
-        logo here
+        <img src={spe_mtns_dark} alt='spelogo'/>
       </div>
       <div>
-        <h3>test</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3>Brands</h3>
+        <a target='_blank' rel='noopener noreferrer' href='https://coros.com/'>Coros</a>
+        <a target='_blank' rel='noopener noreferrer' href='https://www.instincttrail.com/'>Instinct</a>
+        <a target='_blank' rel='noopener noreferrer' href='https://www.metoliusclimbing.com/'>Metolius</a>
+        <a target='_blank' rel='noopener noreferrer' href='https://www.nortecsport.com/'>Nortec</a>
       </div>
       <div>
-        <h3>for</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h3>Agency</h3>
+        <a href='/about'>About Us</a>
+        <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/skypilot.ent/'>Instagram</a>
+        <a href='mailto:sandford@telus.net'>Email</a>
       </div>
       <div>
-        <h3>echo</h3>
-        <p>Lorem ipsum dolor sit amet conestetur.</p>
+        <h3>Mail</h3>
+        <p>
+        Sky Pilot Enterprises, Inc. <br/>
+        P.O. Box 1559 <br/>
+        Garibaldi Highlands, BC<br/>
+        V0N 1T0 Canada
+        </p>
       </div>
     </footer>
   );
