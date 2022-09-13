@@ -19,54 +19,53 @@ other style sheets, but it works for prototyping.
   overflow: hidden;
   width: 100%;
   transition: all 250ms linear;
-  -ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
-  scrollbar-width: none;  /* hide scrollbar in Firefox */
-  background-size:auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .arrow-container {
-  height: 100%;
+  position: absolute;
+  height: 70vh;
+  width: 15%;
+  background-color: transparent;
+  border-style: none;
+  font-size: 100px;
+  color: var(--light);
+  opacity: .3;
+  transition: opacity .4s;
 }
 
-.arrow-btn {
-  cursor: pointer;
-  position:absolute;
-  top: 45%;
-  transform: translateY(-50%);
-  
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: var(--light);
-  border-width: 0 3px 3px 0;
-
-  opacity: 70%;
-  transition: .3s;
+.arrow-container:hover {
+  opacity: .7;
 }
 
-.left-arrow:hover, .right-arrow:hover {
-  opacity: 100%;
-} 
-
-.left-arrow {
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-  left: 2em; /* Use pixels/em/rem here instead of percentage to avoid wierdness. */
+.left {
+  left: 0;
 }
 
-.right-arrow {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  right: 2em;
-} 
-
-@media (hover: none) and (pointer: coarse) {
-  .left-arrow, .right-arrow {
-    display: none;
-  }
+.right {
+  right: 0;
 }
+
+.carousel-dots {
+  vertical-align: bottom;
+  text-align: center;
+}
+
+.carousel-dots .dot {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: var(--light);
+  opacity: .5;
+  margin: 8px;
+  border-style: none;
+}
+
 
 .block-grid {
   line-height: 0;

@@ -19,35 +19,60 @@ function Carousel(): JSX.Element {
     {img: img2, link: "/hi2"},
     {img: img3, link: "/hi3"},
   ];
+  const item_count = carouContent.length;
   const [carouIdx, setCarouIdx] = useState(0);
 
+  const dots = Array.from({length: item_count}, (_, i) => {
+    return <button className='dot' id={`dot-${i}`} onClick={() => goIdx(i)}/>
+  });
+
+  const goIdx = (idx: number) => {
+    if (idx >= 0 && idx < item_count) {
+      setCarouIdx(idx);
+      Array.from(dots).forEach((_, i) => {
+        const el = document.getElementById(`dot-${i}`);
+        if (el) {
+          el.style.opacity = i == idx ? '.7' : '.3';
+        }
+      });
+    }
+  };
+
+  // Can remove goLeft and goRight later, add more checks to goIdx.
   const goLeft = () => {
     if (carouIdx > 0) {
-      setCarouIdx(carouIdx - 1)
+      goIdx(carouIdx - 1);
     }
     else if (carouIdx <= 0) {
-      setCarouIdx(carouContent.length - 1);
+      goIdx(item_count - 1);
     }
   };
 
   const goRight = () => {
-    if (carouIdx < carouContent.length-1) {
-      setCarouIdx(carouIdx + 1)
+    if (carouIdx < item_count-1) {
+      goIdx(carouIdx + 1)
     }
-    else if (carouIdx >= carouContent.length-1) {
-      setCarouIdx(0);
+    else if (carouIdx >= item_count-1) {
+      goIdx(0);
     }
   };
 
+
   return (
     <div className='carousel'>
-      <button className='arrow-btn left-arrow' onClick={goLeft}/>
+      <button className='arrow-container left' onClick={goLeft}>
+        &lsaquo;
+      </button>
       <div className='carousel-content'>
         <div 
           style={{backgroundImage: `url(${carouContent[carouIdx].img})`, textDecoration: 'none'}} 
-          className='carousel-item'/>
+          className='carousel-item'>
+          <div className='carousel-dots'>{dots}</div>
+        </div>
       </div>
-      <button className='arrow-btn right-arrow' onClick={goRight}/>
+      <button className='arrow-container right' onClick={goRight}>
+        &rsaquo;
+      </button>
     </div>
   );
 }
