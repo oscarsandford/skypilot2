@@ -28,14 +28,14 @@ other style sheets, but it works for prototyping.
 
 .arrow-container {
   position: absolute;
-  height: 70vh;
+  height:inherit;
   width: 15%;
   background-color: transparent;
   border-style: none;
   font-size: 100px;
   color: var(--light);
   opacity: .3;
-  transition: opacity .4s;
+  transition: .3s;
 }
 
 .arrow-container:hover {
@@ -167,4 +167,24 @@ other style sheets, but it works for prototyping.
   width: 20rem;
   height: 20rem;
   -webkit-user-drag: none;
+}
+
+.brand-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.brand-row .text {
+  width: 60%;
+}
+
+.brand-row .gallery {
+  width: 40%;
+}
+
+.brand-row .gallery img {
+  border-radius: 10px;
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }

@@ -58,10 +58,10 @@ function Home(): JSX.Element {
           />
         </ScrollRow>
       </div>
-      <div className='container blank' style={{backgroundImage: `url(${panorama_1})`, textDecoration: 'none'}}>
-        
-      </div>
-      {/* Social media embeds here. */}
+      {/* <div className='container blank' style={{backgroundImage: `url(${panorama_1})`, textDecoration: 'none'}}>
+      </div> */}
+      {/* Social media instagram embeds here. We can probably just use the images from the 
+      posts instead of messing with (and having to get approval from Meta) the Instagram API.*/}
     </div>
   );
 }

@@ -27,41 +27,25 @@ function Carousel(): JSX.Element {
   });
 
   const goIdx = (idx: number) => {
-    if (idx >= 0 && idx < item_count) {
-      setCarouIdx(idx);
-      Array.from(dots).forEach((_, i) => {
-        const el = document.getElementById(`dot-${i}`);
-        if (el) {
-          el.style.opacity = i == idx ? '.7' : '.3';
-        }
-      });
+    if (idx < 0) {
+      idx = item_count-1;
     }
+    else if (idx >= item_count) {
+      idx = 0;
+    }
+    setCarouIdx(idx);
+    Array.from(dots).forEach((_, i) => {
+      const el = document.getElementById(`dot-${i}`);
+      if (el) {
+        el.style.opacity = i == idx ? '.9' : '.3';
+      }
+    });
   };
-
-  // Can remove goLeft and goRight later, add more checks to goIdx.
-  const goLeft = () => {
-    if (carouIdx > 0) {
-      goIdx(carouIdx - 1);
-    }
-    else if (carouIdx <= 0) {
-      goIdx(item_count - 1);
-    }
-  };
-
-  const goRight = () => {
-    if (carouIdx < item_count-1) {
-      goIdx(carouIdx + 1)
-    }
-    else if (carouIdx >= item_count-1) {
-      goIdx(0);
-    }
-  };
-
 
   return (
     <div className='carousel'>
-      <button className='arrow-container left' onClick={goLeft}>
-        &lsaquo;
+      <button className='arrow-container left' 
+        onClick={() => goIdx(carouIdx-1)}> &lsaquo;
       </button>
       <div className='carousel-content'>
         <div 
@@ -70,8 +54,8 @@ function Carousel(): JSX.Element {
           <div className='carousel-dots'>{dots}</div>
         </div>
       </div>
-      <button className='arrow-container right' onClick={goRight}>
-        &rsaquo;
+      <button className='arrow-container right' 
+        onClick={() => goIdx(carouIdx+1)}> &rsaquo;
       </button>
     </div>
   );
