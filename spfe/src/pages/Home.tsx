@@ -5,7 +5,7 @@ import ScrollRow from '../components/ScrollRow';
 import Profile from '../components/Profile';
 
 import dummy_img from '../assets/new/sb.jpg';
-import panorama_1 from '../assets/panorama/panorama_1.jpg';
+// import panorama_1 from '../assets/panorama/panorama_1.jpg';
 
 import pfp_jgs from '../assets/pfp/pfp_jgs.jpg';
 import pfp_jsw from '../assets/pfp/pfp_jsw.jpg';
@@ -20,24 +20,24 @@ function Home(): JSX.Element {
       <div className='container' id='home'>
         <div className='block-grid'>
           <ImgLinkBlock img={dummy_img} 
-            title={'BRAND 1'} 
+            title={'COROS'} 
             text={'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-            link='/b1'
+            link='/brands#COROS'
           />
           <ImgLinkBlock img={dummy_img} 
-            title={'BRAND 2'} 
+            title={'INSTINCT'} 
             text={'Duis aute irure dolor.'}
-            link='/b2'
+            link='/brands#INSTINCT'
           />
           <ImgLinkBlock img={dummy_img} 
-            title={'BRAND 3'} 
+            title={'METOLIUS'} 
             text={'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
-            link="/b3"
+            link="/brands#METOLIUS"
           />
           <ImgLinkBlock img={dummy_img} 
-            title={'BRAND 4'} 
+            title={'NORTEC'} 
             text={'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-            link='/b4'
+            link='/brands/#NORTEC'
           />
         </div>
       </div>

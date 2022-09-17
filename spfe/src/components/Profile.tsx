@@ -8,10 +8,7 @@ interface ProfileProps {
 };
 
 function Profile({
-  pfp,
-  name,
-  position,
-  description
+  pfp, name, position, description
 } : ProfileProps): JSX.Element {
   return (
     <div className='profile'>

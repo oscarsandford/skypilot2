@@ -58,4 +58,5 @@ body {
   /* See https://cssgradient.io/ */
   background: rgb(1,117,63);
   background: linear-gradient(0deg, rgba(1,117,63,1) 0%, rgba(130,212,138,1) 100%, rgba(0,212,255,1) 100%);
+  padding: 3% 3% 3% 3%;
 }

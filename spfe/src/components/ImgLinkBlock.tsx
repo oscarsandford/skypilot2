@@ -9,10 +9,7 @@ interface ILBlockProps {
 }
 
 function ImgLinkBlock({
-  img, 
-  link,
-  title, 
-  text
+  img, link, title, text
 } : ILBlockProps): JSX.Element {
   return (
     <Link to={link} style={{backgroundImage: `url(${img})`, textDecoration: 'none'}} className='block'>

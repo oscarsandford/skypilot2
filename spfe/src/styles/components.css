@@ -169,22 +169,70 @@ other style sheets, but it works for prototyping.
   -webkit-user-drag: none;
 }
 
-.brand-row {
+.brand {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+  border-radius: 5px;
+}
+
+.brand .text {
+  width: 60%;
+  padding: 10px;
+  /* This is so we can center the main element. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand .text p {
+  padding-top: 20px;
+}
+
+.brand .title {
   display: flex;
   flex-direction: row;
 }
 
-.brand-row .text {
-  width: 60%;
+.brand .title h2 {
+  padding-left: 10px;
+  padding-top: 8px;
 }
 
-.brand-row .gallery {
+.brand .title img {
+  width: 50px;
+  height: 50px;
+  vertical-align: center;
+  border-radius: 50%;
+  border-style: groove;
+  -webkit-user-drag: none;
+}
+
+.brand .gallery {
   width: 40%;
+  /* This is so we can center the main element. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.brand-row .gallery img {
+.brand .gallery img {
   border-radius: 10px;
   display: inline-block;
   width: 100%;
   height: auto;
+  -webkit-user-drag: none;
+}
+
+@media (max-width: 1000px) {
+  .brand {
+    flex-direction: column;
+  }
+  .brand .text {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .brand .gallery {
+    width: 100%;
+  }
 }
