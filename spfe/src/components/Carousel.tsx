@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
-import img1 from '../assets/new/cb.jpg';
-import img2 from '../assets/new/uwu.jpg';
-import img3 from '../assets/new/sb.jpg';
+import new1 from '../assets/new/n001.jpg';
+import new2 from '../assets/new/n002.jpg';
 
 interface carouselItem {
   img: string,
@@ -15,9 +14,8 @@ function Carousel(): JSX.Element {
   // anymore, but we'll leave these attributes 
   // here for now, until we know for sure.
   const carouContent: Array<carouselItem> = [
-    {img: img1, link: "/hi1"},
-    {img: img2, link: "/hi2"},
-    {img: img3, link: "/hi3"},
+    {img: new1, link: ''},
+    {img: new2, link: ''},
   ];
   const item_count = carouContent.length;
   const [carouIdx, setCarouIdx] = useState(0);

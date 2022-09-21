@@ -7,24 +7,36 @@ import instinct_icon from '../assets/logo/instinct.png';
 import metolius_icon from '../assets/logo/metolius.png';
 import nortec_icon from '../assets/logo/nortec.png';
 
-import coros_a1 from '../assets/action/coros_DSC0129.png';
-import coros_a2 from '../assets/action/coros_DSC1233.png';
-import instinct_a1 from '../assets/action/instinct_a1.png';
-import metolius_a1 from '../assets/action/metolius_a1.png';
-import nortec_a1 from '../assets/action/nortec_a1.png';
-import nortec_a2 from '../assets/action/nortec_a2.png';
-import nortec_a3 from '../assets/action/nortec_a3.png';
-import nortec_a4 from '../assets/action/nortec_a4.png';
-import nortec_a5 from '../assets/action/nortec_a5.png';
+import coros_a1 from '../assets/action/coros_a01.png';
+import coros_a3 from '../assets/action/coros_a03.png';
+import coros_a4 from '../assets/action/coros_a04.png';
+import coros_a5 from '../assets/action/coros_a05.png';
+import coros_a6 from '../assets/action/coros_a06.png';
+
+import instinct_a2 from '../assets/action/instinct_a02.png';
+import instinct_a3 from '../assets/action/instinct_a03.png';
+import instinct_a4 from '../assets/action/instinct_a04.png';
+import instinct_a5 from '../assets/action/instinct_a05.png';
+import instinct_a6 from '../assets/action/instinct_a06.png';
+
+import metolius_a1 from '../assets/action/metolius_a01.png';
+import metolius_a2 from '../assets/action/metolius_a02.png';
+import metolius_a3 from '../assets/action/metolius_a03.png';
+import metolius_a4 from '../assets/action/metolius_a04.png';
+import metolius_a7 from '../assets/action/metolius_a07.png';
+
+import nortec_a1 from '../assets/action/nortec_a01.png';
+import nortec_a2 from '../assets/action/nortec_a02.png';
+import nortec_a3 from '../assets/action/nortec_a03.png';
+import nortec_a4 from '../assets/action/nortec_a04.png';
+import nortec_a5 from '../assets/action/nortec_a05.png';
 
 
 function Brands(): JSX.Element {
-  // Arbitrary, but make sure each brand has +1 more than this number of imgs.
-  const max_idx = 1;
-  // Images should be 1920x1080, PNG.
-  const imgs_coros = Array<string>(coros_a1, coros_a2);
-  const imgs_instinct = Array<string>(instinct_a1);
-  const imgs_metolius = Array<string>(metolius_a1)
+  const max_idx = 4;
+  const imgs_coros = Array<string>(coros_a1, coros_a3, coros_a4, coros_a5, coros_a6);
+  const imgs_instinct = Array<string>(instinct_a2, instinct_a3, instinct_a4, instinct_a5, instinct_a6);
+  const imgs_metolius = Array<string>(metolius_a1, metolius_a2, metolius_a3, metolius_a4, metolius_a7);
   const imgs_nortec = Array<string>(nortec_a1, nortec_a2, nortec_a3, nortec_a4, nortec_a5);
 
   const [iidx, setIidx] = useState(0);

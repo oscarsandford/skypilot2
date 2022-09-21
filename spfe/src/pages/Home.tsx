@@ -4,8 +4,10 @@ import ImgLinkBlock from '../components/ImgLinkBlock';
 import ScrollRow from '../components/ScrollRow';
 import Profile from '../components/Profile';
 
-import dummy_img from '../assets/new/sb.jpg';
-// import panorama_1 from '../assets/panorama/panorama_1.jpg';
+import coros_link from '../assets/product/coros_p03.png';
+import instinct_link from '../assets/action/instinct_a04.png';
+import metolius_link from '../assets/product/metolius_p02.jpg';
+import nortec_link from '../assets/product/nortec_p05.jpg';
 
 import pfp_jgs from '../assets/pfp/pfp_jgs.jpg';
 import pfp_jsw from '../assets/pfp/pfp_jsw.jpg';
@@ -19,22 +21,22 @@ function Home(): JSX.Element {
       <Carousel/>
       <div className='container' id='home'>
         <div className='block-grid'>
-          <ImgLinkBlock img={dummy_img} 
+          <ImgLinkBlock img={coros_link} 
             title={'COROS'} 
             text={'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
             link='/brands#COROS'
           />
-          <ImgLinkBlock img={dummy_img} 
+          <ImgLinkBlock img={instinct_link} 
             title={'INSTINCT'} 
             text={'Duis aute irure dolor.'}
             link='/brands#INSTINCT'
           />
-          <ImgLinkBlock img={dummy_img} 
+          <ImgLinkBlock img={metolius_link} 
             title={'METOLIUS'} 
             text={'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
             link="/brands#METOLIUS"
           />
-          <ImgLinkBlock img={dummy_img} 
+          <ImgLinkBlock img={nortec_link} 
             title={'NORTEC'} 
             text={'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
             link='/brands/#NORTEC'

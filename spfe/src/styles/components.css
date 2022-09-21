@@ -36,6 +36,7 @@ other style sheets, but it works for prototyping.
   color: var(--light);
   opacity: .3;
   transition: .3s;
+  cursor:pointer;
 }
 
 .arrow-container:hover {
@@ -86,6 +87,7 @@ other style sheets, but it works for prototyping.
   color: var(--light);
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
   cursor: pointer;
+  transition: all .4s;
 }
 
 .block-grid .block:hover {
@@ -94,6 +96,8 @@ other style sheets, but it works for prototyping.
     -moz-transform: scale(1.007);
     -o-transform: scale(1.007);
     -ms-transform: scale(1.007);
+  background-color: rgba(0, 0, 0, 0.123);
+  background-blend-mode: darken;
 }
 
 .block-grid .block .text-wrapper {
