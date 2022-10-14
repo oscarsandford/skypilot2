@@ -35,7 +35,7 @@ function Carousel(): JSX.Element {
     Array.from(dots).forEach((_, i) => {
       const el = document.getElementById(`dot-${i}`);
       if (el) {
-        el.style.opacity = i == idx ? '.9' : '.3';
+        el.style.opacity = i === idx ? '.9' : '.3';
       }
     });
   };

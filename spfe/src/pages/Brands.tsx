@@ -51,19 +51,20 @@ function Brands(): JSX.Element {
   return (
     <div className='container' id='brands'>
       <Brand name='COROS' icon={coros_icon} paragraphs={[
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-        'Quam nulla porttitor massa id neque aliquam. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Accumsan in nisl nisi scelerisque eu ultrices vitae. Sagittis orci a scelerisque purus semper eget duis at tellus. Enim blandit volutpat maecenas volutpat blandit aliquam. Eget sit amet tellus cras adipiscing enim eu turpis. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.'
+        'Coros enables athletes to train to be their best. Through the use of intuitive interfaces and dependable hardware, users have pushed the extremes and set world records in a variety of outdoor activities.',
+        ''
       ]} gallery={imgs_coros} iidx={iidx}/>
       <Brand name='INSTINCT' icon={instinct_icon} paragraphs={[
-        'Quam nulla porttitor massa id neque aliquam. Adipiscing elit ut aliquam purus sit amet luctus venenatis. Accumsan in nisl nisi scelerisque eu ultrices vitae. Sagittis orci a scelerisque purus semper eget duis at tellus. Enim blandit volutpat maecenas volutpat blandit aliquam. Eget sit amet tellus cras adipiscing enim eu turpis. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris.'
+        'Instinct places a focus on reducing their environmental footprint by using recycled polyester in a part of their products. The result is a lightweight, uncompromising product for trail running and scrambling.',
+        ''
       ]} gallery={imgs_instinct} iidx={iidx}/>
       <Brand name='METOLIUS' icon={metolius_icon} paragraphs={[
-        'Risus nec feugiat in fermentum posuere urna nec tincidunt praesent.',
-        'Id consectetur purus ut faucibus. At consectetur lorem donec massa sapien faucibus et molestie. Eget aliquet nibh praesent tristique magna. Quis risus sed vulputate odio ut enim blandit volutpat. Posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam vestibulum morbi blandit cursus risus. Fusce id velit ut tortor pretium. Mattis pellentesque id nibh tortor id aliquet.'
+        'Based in Bend, Oregon since 1983, Metolius Climbing designs a wide array of reliable gear for rock climbing and bouldering "by climbers, for climbers."',
+        ''
       ]} gallery={imgs_metolius} iidx={iidx}/>
       <Brand name='NORTEC' icon={nortec_icon} paragraphs={[
-        'Aenean vel elit scelerisque mauris. Cursus metus aliquam eleifend mi in nulla.',
-        'Eleifend quam adipiscing vitae proin sagittis. Urna et pharetra pharetra massa massa ultricies mi quis. In iaculis nunc sed augue lacus viverra. Tempor id eu nisl nunc mi.'
+        'Known for their lightweight products and micro crampon techonology, Nortec aims to design the best gear for quickly moving through any terrain across mountains and through valleys.',
+        ''
       ]} gallery={imgs_nortec} iidx={iidx}/>
     </div>
   );

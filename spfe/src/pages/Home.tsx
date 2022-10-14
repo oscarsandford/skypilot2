@@ -23,22 +23,22 @@ function Home(): JSX.Element {
         <div className='block-grid'>
           <ImgLinkBlock img={coros_link} 
             title={'COROS'} 
-            text={'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+            text={'Performance sports technology for beginner and professional athletes.'}
             link='/brands#COROS'
           />
           <ImgLinkBlock img={instinct_link} 
             title={'INSTINCT'} 
-            text={'Duis aute irure dolor.'}
+            text={'Functional, lightweight, and ergonomic running gear and apparel.'}
             link='/brands#INSTINCT'
           />
           <ImgLinkBlock img={metolius_link} 
             title={'METOLIUS'} 
-            text={'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}
+            text={'Reliable gear for all forms of climbing, with a rich history since 1983.'}
             link="/brands#METOLIUS"
           />
           <ImgLinkBlock img={nortec_link} 
             title={'NORTEC'} 
-            text={'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
+            text={'Micro crampons and running gear for trail and mountain.'}
             link='/brands/#NORTEC'
           />
         </div>

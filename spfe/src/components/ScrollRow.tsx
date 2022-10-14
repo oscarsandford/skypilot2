@@ -8,7 +8,7 @@ function ScrollRow(props: ScrollRowProps) {
   /**
    * A scrollable row intended to be placed in a standard container.
    * The row can be moved horizontally via a horizontal scroll or 
-   * by dragging with the left mouse button.
+   * by clicking and dragging with the mouse.
    */
 
   const row = document.getElementById('portraits');
@@ -20,6 +20,7 @@ function ScrollRow(props: ScrollRowProps) {
   }
   
   const flexRowMouseDown = (e: React.MouseEvent<HTMLElement, MouseEvent>): void => {
+    const row = document.getElementById('portraits');
     if (row) {
       row.style.cursor = 'grabbing';
       row.style.userSelect = 'none';
@@ -32,12 +33,14 @@ function ScrollRow(props: ScrollRowProps) {
   };
 
   const flexRowMouseMove = (e: React.MouseEvent<HTMLElement, MouseEvent>): void => {
+    const row = document.getElementById('portraits');
     if (row && grabbed) {
       row.scrollLeft = pos.left - (e.clientX - pos.x);
     }
   };
 
   const flexRowMouseUp = (e: React.MouseEvent<HTMLElement, MouseEvent>): void => {
+    const row = document.getElementById('portraits');
     if (row) {
       row.style.cursor = 'grab';
       row.style.removeProperty('user-select');
