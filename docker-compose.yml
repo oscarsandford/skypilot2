@@ -1,0 +1,42 @@
+version: '3.4'
+name: skypilot
+
+services:
+  spfe:
+    build:
+      context: spfe
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3151:3000
+    networks:
+      - frontend
+    depends_on:
+      - spbe
+    restart: always
+  spbe:
+    build:
+      context: spbe
+    expose:
+      - 3000
+    networks:
+      - frontend
+      - backend
+    depends_on:
+      - db
+    restart: always
+  spdb:
+    image: mongo:latest
+    container_name: spdb
+    volumes:
+      - /db/skypilot:/db/skypilot
+    env_file:
+      - .env
+    expose:
+      - 27017
+    networks:
+      - backend
+    restart: always
+networks:
+  frontend:
+  backend:
